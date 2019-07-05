@@ -1,0 +1,404 @@
+{
+	"variables": [],
+	"info": {
+		"name": "loanApp",
+		"_postman_id": "b76f8927-1a2c-cec0-09a7-3e359eac4542",
+		"description": "Backend for loan application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "localhost:3000/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Akinkunmi",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "akin",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "95219aaa-6904-4395-8205-48ec080ce502",
+					"name": "Login",
+					"originalRequest": {
+						"url": "localhost:3000/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Akinkunmi",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "akin",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "337",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 05 Jul 2019 10:39:50 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"151-ZXFlAMa342VZK1KpzOpbad8ooP8\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 28,
+					"body": "{\"token\":\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwibmFtZSI6IkFraW5rdW5taSIsImVtYWlsIjoicm9xYWsxQGdtYWlsLmNvbSIsImxvZ2dlZEluYXQiOjE1NjIzMjMxOTAyMzIsImlhdCI6MTU2MjMyMzE5MH0.VVCfJv7CuphShFRN6kynArnG3N6ZIThQw7TewzEWPkI\",\"user\":{\"id\":0,\"name\":\"Akinkunmi\",\"email\":\"roqak1@gmail.com\",\"loggedInat\":1562323190232,\"iat\":1562323190}}"
+				}
+			]
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"url": "localhost:3000/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Aki",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "kk",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "kk@gmail.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Save a new user to the system"
+			},
+			"response": [
+				{
+					"id": "7f6b5064-ece2-478c-b81f-593dea79a756",
+					"name": "Create User",
+					"originalRequest": {
+						"url": "localhost:3000/user",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Aki",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "kk",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "mail",
+									"value": "kk@gmail.com",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "60",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 05 Jul 2019 10:40:12 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"3c-Ai95qO3GrGQ79wklO10upyJHCPc\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 34,
+					"body": "{\"id\":3,\"name\":\"Aki\",\"password\":\"kk\",\"email\":\"kk@gmail.com\"}"
+				}
+			]
+		},
+		{
+			"name": "Get Loans",
+			"request": {
+				"url": "localhost:3000/loan",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwibmFtZSI6IkFraW5rdW5taSIsImVtYWlsIjoicm9xYWsxQGdtYWlsLmNvbSIsImxvZ2dlZEluYXQiOjE1NjIyNDk3NjIzODIsImlhdCI6MTU2MjI0OTc2Mn0.J4nGovyqyK6RtE6o6oit5qnZgZqdjlcWoRAVj3F9Cl0",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get all Loans Available"
+			},
+			"response": [
+				{
+					"id": "acb02e85-fdc7-4572-993a-5ea7d93e22d3",
+					"name": "Get Loans",
+					"originalRequest": {
+						"url": "localhost:3000/loan",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwibmFtZSI6IkFraW5rdW5taSIsImVtYWlsIjoicm9xYWsxQGdtYWlsLmNvbSIsImxvZ2dlZEluYXQiOjE1NjIyNDk3NjIzODIsImlhdCI6MTU2MjI0OTc2Mn0.J4nGovyqyK6RtE6o6oit5qnZgZqdjlcWoRAVj3F9Cl0",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "218",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 05 Jul 2019 10:39:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"da-ouwhfpRhD/MrcRnAgEmE667UWOw\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 48,
+					"body": "[{\"id\":0,\"name\":\"Ren money\",\"Description\":\"Salary Earners Discounted loan\",\"intrestRate\":3,\"amount\":50000,\"tenure\":18},{\"id\":1,\"name\":\"Kia Kia\",\"Description\":\"Easy Small Loan\",\"intrestRate\":5,\"amount\":5000,\"tenure\":3}]"
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/apply/1",
+			"request": {
+				"url": "localhost:3000/apply/1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwibmFtZSI6IkFraW5rdW5taSIsImVtYWlsIjoicm9xYWsxQGdtYWlsLmNvbSIsImxvZ2dlZEluYXQiOjE1NjIzMjMxOTAyMzIsImlhdCI6MTU2MjMyMzE5MH0.VVCfJv7CuphShFRN6kynArnG3N6ZIThQw7TewzEWPkI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Apply for a loan"
+			},
+			"response": [
+				{
+					"id": "19dba97a-e159-4e15-9a94-599effa2685d",
+					"name": "localhost:3000/apply/1",
+					"originalRequest": {
+						"url": "localhost:3000/apply/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwibmFtZSI6IkFraW5rdW5taSIsImVtYWlsIjoicm9xYWsxQGdtYWlsLmNvbSIsImxvZ2dlZEluYXQiOjE1NjIzMjMxOTAyMzIsImlhdCI6MTU2MjMyMzE5MH0.VVCfJv7CuphShFRN6kynArnG3N6ZIThQw7TewzEWPkI",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "125",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 05 Jul 2019 10:43:03 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"7d-WgqRTOOlQtVRHi0jaQoLY5XrUZw\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 37,
+					"body": "{\"id\":1,\"userId\":0,\"loan\":{\"id\":1,\"name\":\"Kia Kia\",\"Description\":\"Easy Small Loan\",\"intrestRate\":5,\"amount\":5000,\"tenure\":3}}"
+				}
+			]
+		}
+	]
+}
